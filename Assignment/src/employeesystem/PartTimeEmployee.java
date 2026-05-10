@@ -1,16 +1,10 @@
 package employeesystem;
 
-public class PartTimeEmployee {
-    private String name;
-    private int employeeId;
-    private double basicSalary;
+public class PartTimeEmployee extends Employee {
     private double hoursWorked;
     private double hourlyRate;
 
-    public PartTimeEmployee(String name, int id , double basicSalary, double hoursWorked, double hourlyRate){
-        this.name = name;
-        this.employeeId = id;
-        this.basicSalary = basicSalary;
+    public PartTimeEmployee(String name, int id , double hoursWorked, double hourlyRate){
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
     }
@@ -19,4 +13,22 @@ public class PartTimeEmployee {
         double totalSalary = this.hoursWorked * this.hourlyRate;
         return totalSalary;
     }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
+
+    public double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    public void setHourlyRate(double hourlyRate) {
+        this.hourlyRate = hourlyRate;
+    }
+
+    //toString 
 }
