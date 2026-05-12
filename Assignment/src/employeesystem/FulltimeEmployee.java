@@ -11,6 +11,7 @@ public class FulltimeEmployee extends Employee {
        this.bonus = bonus;
    }
 
+   @Override
    public double calculateSalary(){
        return basicSalary + bonus + allowance;
    }

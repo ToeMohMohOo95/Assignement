@@ -1,6 +1,6 @@
 package employeesystem;
 
-public class Employee {
+public abstract class Employee {
     private String name;
     private int employeeId;
 
@@ -20,4 +20,5 @@ public class Employee {
         this.employeeId = employeeId;
     }
 
+    public abstract double calculateSalary();
 }

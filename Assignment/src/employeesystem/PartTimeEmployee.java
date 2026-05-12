@@ -9,6 +9,7 @@ public class PartTimeEmployee extends Employee {
         this.hourlyRate = hourlyRate;
     }
 
+    @Override
     public double calculateSalary(){
         double totalSalary = this.hoursWorked * this.hourlyRate;
         return totalSalary;
