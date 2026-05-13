@@ -3,7 +3,7 @@ package vehiclesystem;
 public class Motorcycle extends Vehicle{
     private boolean hasSidecar;
 
-    public Motorcycle(String brand, String model, boolean payloadCapacity){
+    public Motorcycle(String brand, String model, boolean hasSidecar){
         super.setBrand(brand);
         super.setModel(model);
         this.hasSidecar = hasSidecar;
